@@ -17,8 +17,12 @@ Verbrauch pro Fahrt:
 9.00  
 8.00  
 8.33  
-
 Durchschnitt: 8.42 l/100km
+
+## Features (Update)
+- Data visualization with matplotlib
+- Graph showing fuel consumption per trip
+
 
 ## Autor
 Alexander Zimmermann
