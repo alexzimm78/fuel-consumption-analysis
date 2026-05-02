@@ -1,5 +1,5 @@
 import csv
-
+import matplotlib.pyplot as plt
 def read_data(filename):
     data = []
     try:
@@ -28,9 +28,17 @@ def average_consumption(consumptions):
         return 0
     return sum(consumptions) / len(consumptions)
 
+def plot_consumption(consumptions):
+    plt.plot(consumptions, marker='o')
+    plt.title("Kraftstoffverbrauch pro Fahrt")
+    plt.xlabel("Fahrt Nummer")
+    plt.ylabel("Verbrauch (l/100km)")
+    plt.grid()
+    plt.show()
 
 def main():
     filename = "data.csv"
+
 
     data = read_data(filename)
 
@@ -46,6 +54,7 @@ def main():
         print(f"{c:.2f}")
 
     print(f"\nDurchschnitt: {avg:.2f} l/100km")
+    plot_consumption(consumptions)
 
 
 if __name__ == "__main__":
