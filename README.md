@@ -11,5 +11,14 @@ Python-Projekt zur Analyse von Kraftstoffverbrauch im Logistikumfeld.
 - Python
 - CSV
 
+## Example Output
+Verbrauch pro Fahrt:
+8.33  
+9.00  
+8.00  
+8.33  
+
+Durchschnitt: 8.42 l/100km
+
 ## Autor
 Alexander Zimmermann
